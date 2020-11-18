@@ -3,9 +3,9 @@
 
 
 //MySQLに接続 
-$dsn = 'mysql:dbname=tb220838db;host=localhost'; 
-$user = 'tb-220838'; 
-$password = 'tNAHs9m3YD'; 
+$dsn = 'データベース名'; 
+$user = 'ユーザー名'; 
+$password = 'パスワード'; 
 $pdo=new PDO($dsn, $user, $password);  
 
 //テーブルを作る tb　CREATE TABLE文 
@@ -108,9 +108,9 @@ txt読み込み時の新規投稿機能
     $pass2=$_POST['passcode'];                   
           
          //MySQLに接続 
-         $dsn = 'mysql:dbname=tb220838db;host=localhost'; 
-         $user = 'tb-220838'; 
-         $password = 'tNAHs9m3YD'; 
+        $dsn = 'データベース名'; 
+　　　　　$user = 'ユーザー名'; 
+        $password = 'パスワード'; 
          $pdo=new PDO($dsn, $user, $password);  
 
           //全てのデータ取り出し　SELECT*FROM　テーブル名 
@@ -177,9 +177,9 @@ if(isset($_POST['delete'])){
     $delete=$_POST['deleteNo']; 
     
    //MySQLに接続 
-   $dsn = 'mysql:dbname=tb220838db;host=localhost'; 
-   $user = 'tb-220838'; 
-   $password = 'tNAHs9m3YD'; 
+        $dsn = 'データベース名'; 
+　　　　　$user = 'ユーザー名'; 
+        $password = 'パスワード';  
    $pdo=new PDO($dsn, $user, $password);   
    
   //全てのデータを取り出す 
@@ -239,9 +239,9 @@ if(isset($_POST['edit2'])){
     $pass_edit=$_POST['Editpasscode'];    
     
    //MySQLに接続 
-   $dsn = 'mysql:dbname=tb220838db;host=localhost'; 
-   $user = 'tb-220838'; 
-   $password = 'tNAHs9m3YD'; 
+        $dsn = 'データベース名'; 
+　　　　　$user = 'ユーザー名'; 
+        $password = 'パスワード'; 
    $pdo=new PDO($dsn, $user, $password);   
    
   //全データの取り出し 
